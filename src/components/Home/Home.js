@@ -35,8 +35,6 @@ const Home = () => {
         setSurah(parseInt(e.target.value))
     } 
 
-    console.log(currentSurah);
-
 
     return (
         <div className='min-h-screen bg-gray-100'>
@@ -58,7 +56,7 @@ const Home = () => {
                                     currentSurah.name
                                 }
                             </h3>
-                            <p>{currentSurah.englishName}</p>
+                            <p>{currentSurah.englishName} - Ayahs - {currentSurah.numberOfAyahs}</p>
                         </div>
 
                         {/* <div className="flex-1 px-4">
