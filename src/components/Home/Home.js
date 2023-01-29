@@ -6,8 +6,8 @@ import "./Home.css";
 const Home = () => {
     const [surah, setSurah] = useState(1);
 
-    const surahUrl = 'http://api.alquran.cloud/v1/surah';
-    const currentSurahUrl = `http://api.alquran.cloud/v1/surah/${surah}`
+    const surahUrl = 'https://api.alquran.cloud/v1/surah';
+    const currentSurahUrl = `https://api.alquran.cloud/v1/surah/${surah}`
 
     const { data: surahs = [], isLoading: surahsLoading } = useQuery({
         queryKey: ['surah'],
